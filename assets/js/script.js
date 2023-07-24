@@ -2,7 +2,8 @@ const API_KEY = "NVRepz1iRQHdtyJGFeVvkbn6JPQ";
 const API_URL = "https://ci-jshint.herokuapp.com/api";
 const resultsModal = new bootstrap.Modal(document.getElementById("resultsModal"));
 
-document.getElementById("status").addEventListener("click", e => getStatus(e));
+document.getElementById("status").addEventListener("click", e => getStatus(e)); // "Check Key" button
+document.getElementById("submit").addEventListener("click", e => postForm(e)); // "Run Checks" button
 
 async function getStatus(e) {
 
